@@ -10,7 +10,7 @@ class_max = 5000 # change at descretion
 batch_size = 256
 
 def dataset_classifcation(path, resize_h, resize_w, train=True, limit=None):
-    """ Function to load jpeg images from sub directories for deep learning train purposes """
+    """ Function to load jpeg images from sub directories for deep learning models """
 
     # list all paths to data classes except DS_Store
     class_folders = [f for f in sorted(os.listdir(path)) if not f.startswith('.')]
